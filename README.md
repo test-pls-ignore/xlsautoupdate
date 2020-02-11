@@ -1,4 +1,4 @@
-# xslautoupdate
+# xlsautoupdate
 Automatically updates data connections of Excel files
 
 

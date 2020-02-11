@@ -13,6 +13,9 @@ xlapp = win32com.client.DispatchEx("Excel.Application")
 # Open the workbook in said instance of Excel
 wb = xlapp.workbooks.open("U:\PMO-Übersicht.xlsm")
 
+# create backup
+wb.SaveCopyAs("U:\PMO-Übersicht_backup.xlsm")
+
 # Optional to see the instance
 # xlapp.Visible = True
 

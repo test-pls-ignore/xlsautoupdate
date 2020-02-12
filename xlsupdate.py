@@ -6,6 +6,10 @@ Created on Tue Feb 11 07:15:56 2020
 """
 
 import win32com.client
+import time
+
+# delay start to ensure that database connections are online
+time.sleep(60)
 
 # Start an instance of Excel
 xlapp = win32com.client.DispatchEx("Excel.Application")
